@@ -57,7 +57,7 @@
 \definecolor{PrimaryColor}{HTML}{001F5A}
 \definecolor{SecondaryColor}{HTML}{0039AC}
 \definecolor{ThirdColor}{HTML}{F3890B}
-\definecolor{BackgroundColor}{HTML}{FFFFFF}
+\definecolor{BackgroundColor}{HTML}{F5F5F5}
 \colorlet{name}{PrimaryColor}
 \colorlet{tagline}{PrimaryColor}
 \colorlet{heading}{PrimaryColor}
@@ -95,21 +95,22 @@
 
 %% sample.bib contains your publications
 %% \addbibresource{sample.bib}
-
+\hyphenpenalty=10000
 \begin{document}
-    \name{Mohammadreza Rahimi}
+    \name{Rez Rahimi}
     \tagline{Full Stack Developer}
     %% You can add multiple photos on the left or right
     %\photoR{4cm}{mamroz}
     
     \personalinfo{
-        \email{mamrooz@email.com}\smallskip
+        %\email{me@rezrahimi.com}
+        \email{smrahimi@ucalgary.ca}
         \phone{+01-403-714-7551}
-        \location{Calgary, Canada}\\
+        \location{Calgary, Canada} \\
         \linkedin{mohammadrezarahimi}
-        \github{mamrooz}
+        %\github{mamrooz}
         %\dev{johnDoe}
-        %\homepage{nicolasomar.me}
+        \homepage{rezrahimi.com}
         %\medium{nicolasomar}
         %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
         % \orcid{0000-0000-0000-0000}
@@ -127,153 +128,59 @@
     % \AtBeginEnvironment{itemize}{\small}
     
     %% Set the left/right column width ratio to 6:4.
-    \columnratio{0.75}
+    \columnratio{0.28}
 
     % Start a 2-column paracol. Both the left and right columns will automatically
     % break across pages if things get too long.
     \begin{paracol}{2}
-        
-        % ----- ABOUT ME -----
-        %\cvsection{About Me}
-        %    \begin{quote}
-        %        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        %    \end{quote}
-        % ----- ABOUT ME -----
-        
-        % ----- ABOUT ME -----
-        %\cvsection{Summary of Qualifications}
-        %    \begin{itemize}
-        %        \item  Leadership, problem-solving skills, creative, fast learner and team player.
-        %        \item  Perseverant, self-motivated, analytical problem solver as evidenced through high performance and consistent delivery of effective results in both work and academic environments.
-        %        \item Great communication, documentation, and presentation skills, flexible to work effectively both independently and in a collaborative, self-organizing team environment.
-        %        \item  Experienced UML, Agile software development methodology, Object Oriented Programming, prototyping as demonstrated through many projects.
-        %        \item  Experienced UML, Agile software development methodology, Object Oriented Programming, prototyping as demonstrated through many projects.
-        %    \end{itemize}
-        % ----- ABOUT ME -----
-        
-        % ----- EXPERIENCE -----
-        \cvsection{Experience}
-            \cvevent{Lead Software Developer }{| Airble Aviation Inc.}{Jan 2020 -- Present}{Remote}
-            \begin{itemize}
-                \item Design maintenance and implementation of Database, RESTful APIs, website and app.
-                \item Technologies used: MySQL, Node.js, React.js, React Native, JavaScript, CSS, Digital Ocean Cloud. 
-            \end{itemize}
-            \divider
-            
-            \cvevent{Software Developer }{| Eventyab Cloud Services Inc.}{June 2014 -- Present}{Calgary, Canada}
-            \begin{itemize}
-                \item Development and maintenance of ticket sales, seat map and live reporting systems.
-                \item
-                Technologies used: MySQL, PHP, Symfony, JavaScript, CSS, Bootstrap.
-            \end{itemize}
-            \divider
-            
-            \cvevent{Research Assistant}{| University of Calgary}{May 2011 -- Jan 2021}{Calgary, Canada}
-            \begin{itemize}
-                \item Location Recommendation for Social Networks:
-                \begin{itemize}
-                    \item Recommends locations to the users based on their preferences and accessibility of the locations.
-                    \item Technologies used:  Java, MATLAB, Python and MySQL.
-                \end{itemize}
-                \item Collaborations:
-                \begin{itemize}
-                    \item Taxi Route Recommendation. (Java, C++)
-                    \item Route and Travel Mode Recommendation. (Java, C\#)
-                    \item Cold-Heavy Oil Production with Sand (CHOPS) Optimization. (Java, Matlab)
-                \end{itemize}
-                \item 10 publications.
-            \end{itemize}
-        % ----- EXPERIENCE -----
-        
-        % ----- EDUCATION -----
-        \cvsection{Education}
-            \cvevent{Doctor of Philosophy | Geomatics Engineering }{| University of Calgary}{May 2014 -- Jan 2021}{Calgary, Canada}
-            \begin{itemize}
-                 \item Thesis Title: Behavior-based and Contextual Location Recommendation for Location Based Social Networks.
-            \end{itemize}
-            \divider
-            
-            \cvevent{Master of Science | Geomatics Engineering }{| University of Calgary}{May 2011 -- Jan 2014}{Calgary, Canada}
-            \begin{itemize}
-                \item Thesis Title: Activity-based and Behavior-based Location Recommendation for Location Based Social Networks
-            \end{itemize}
-            \divider
-            
-            \cvevent{Bachelor of Science | Software Engineering }{| Sharif Unviersity of Technology}{Sep 2005 -- Sep 2010}{Tehran, Iran}
-        
-        \divider
-        \cvsection{Scholarships and Awards}
-        \cvevent{Alberta Innovates Graduate Student Scholarship}{| University of Calgary}{May 2017}{Calgary, Canada}
-        \cvevent{Eyes High International Doctoral Scholarship}{| University of Calgary}{May 2018}{Calgary, Canada}
-        \cvevent{University Technologies International Inc. Fellowships }{| University of Calgary}{Sep 2014}{Calgary, Canada}
-        
-        \cvsection{Volunteer Experience}
-        \cvevent{President}{| Iranian Graduate Students Association}{May 2014 -- May 2016}{Calgary, Canada}
-        \cvevent{VP-Event}{| Iranian Graduate Students Association}{May 2014 -- May 2016}{Calgary, Canada}
-        % ----- EDUCATION -----
-        
-        % ----- PROJECTS -----
-        %\cvsection{Projects}
-        %    \cvevent{Project 1 }{\cvrepo{| \faGithub}{https://github.com/user/repo}\cvrepo{| \faGlobe}{https://repo-demo.com/}}{Mm YYYY -- Mm YYYY}{}
-        %    \begin{itemize}
-        %        \item Item 1
-        %        \item Item 2
-        %    \end{itemize}
-        %    \divider
-            
-        %    \cvevent{Project 1 }{\cvrepo{| \faGitlab}{https://gitlab.com/user/repo}\cvrepo{| \faGlobe}{https://repo-demo.com/}}{Mm YYYY -- Mm YYYY}{}
-        %    \begin{itemize}
-        %        \item Item 1
-        %        \item Item 2
-        %    \end{itemize}
-        % ----- PROJECTS -----
-        \switchcolumn
         \cvsection{Strengths}
-            \cvtag{Problem Solving}
-            \cvtag{Creative}
-            \cvtag{Fast Learner}
-            \cvtag{Leadership}
-            \cvtag{Team Player}
-            \cvtag{OOP}
-            \cvtag{OOD}
-            \cvtag{Machine Learning}
-            \cvtag{Data Mining}
-            
+            \cvtag{\textbf{Problem Solving}}
+            \cvtag{\textbf{Creative}}
+            \cvtag{\textbf{Fast Learner}}
+            \cvtag{\textbf{Leadership}}
+            \cvtag{\textbf{Team Player}}
+            \cvtag{\textbf{Documentation}}
+            \cvtag{\textbf{Presentation}}
+            \cvtag{\textbf{Data Mining}}\\
+            \cvtag{\textbf{Machine Learning}}
             
         % ----- STRENGTHS -----
         \cvsection{Programming}
-            \cvtag{Java}
-            \cvtag{Python}
-            \cvtag{C}
-            \cvtag{C++}
-            \cvtag{C\#}
-            \cvtag{Matlab}
-            \cvtag{R}
+            \cvtag{\textbf{Java}}
+            \cvtag{\textbf{Python}}
+            \cvtag{\textbf{C}}
+            \cvtag{\textbf{C++}}
+            \cvtag{\textbf{C\#}}
+            \cvtag{\textbf{Matlab}}
+            \cvtag{\textbf{R}}
         
-        \cvsection{Web Development}
-            \cvtag{JavaScript}
-            \cvtag{PHP}
-            \cvtag{HTML}
-            \cvtag{CSS}
-            \cvtag{React.js}
-            \cvtag{Node.js}
-            \cvtag{Symfony}
+        \cvsection{Web\\Development}
+            \cvtag{\textbf{JavaScript}}
+            \cvtag{\textbf{PHP}}
+            \cvtag{\textbf{HTML}}
+            \cvtag{\textbf{CSS}}
+            \cvtag{\textbf{React.js}}
+            \cvtag{\textbf{Node.js}}
+            \cvtag{\textbf{Symfony}}
             
-        \cvsection{App Development}
-            \cvtag{Swift \& XCode}
-            \cvtag{React Native}
+        \cvsection{App\\Development}
+            \cvtag{\textbf{Swift \& XCode}}
+            \cvtag{\textbf{React Native}}
+            \cvtag{\textbf{Expo}}
         
         \cvsection{Database}
-            \cvtag{MySQL}
-            \cvtag{PostgreSQL}
+            \cvtag{\textbf{MySQL}}
+            \cvtag{\textbf{PostgreSQL}}
             
         \cvsection{Other}
-            \cvtag{Git}
-            \cvtag{Code Review}
-            \cvtag{RHadoop}
-            \cvtag{Recommender Systems}
-            \cvtag{Spark}
-            \cvtag{Docker}
+            \cvtag{\textbf{Git}}
+            \cvtag{\textbf{Code Review}}
+            \cvtag{\textbf{RHadoop}}
+            \cvtag{\textbf{Recommender Systems}}
+            \cvtag{\textbf{Spark}}
+            \cvtag{\textbf{Docker}}
+            \cvtag{\textbf{OOD}}
+            \cvtag{\textbf{OOP}}
         % ----- STRENGTHS -----
             
         % ----- REFERENCES -----
@@ -318,6 +225,105 @@
         %% Switch to the right column. This will now automatically move to the second
         %% page if the content is too long.
         \switchcolumn
+        % ----- ABOUT ME -----
+        %\cvsection{About Me}
+        %    \begin{quote}
+        %        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        %    \end{quote}
+        % ----- ABOUT ME -----
+        
+        % ----- ABOUT ME -----
+        %\cvsection{Summary of Qualifications}
+        %    \begin{itemize}
+        %        \item  Leadership, problem-solving skills, creative, fast learner and team player.
+        %        \item  Perseverant, self-motivated, analytical problem solver as evidenced through high performance and consistent delivery of effective results in both work and academic environments.
+        %        \item Great communication, documentation, and presentation skills, flexible to work effectively both independently and in a collaborative, self-organizing team environment.
+        %        \item  Experienced UML, Agile software development methodology, Object Oriented Programming, prototyping as demonstrated through many projects.
+        %        \item  Experienced UML, Agile software development methodology, Object Oriented Programming, prototyping as demonstrated through many projects.
+        %    \end{itemize}
+        % ----- ABOUT ME -----
+        
+        % ----- EXPERIENCE -----
+        \cvsection{Experience}
+            \cvevent{Lead Software Developer }{| Airble Aviation Inc.}{Jan 2020 -- Present}{Remote}
+            \begin{itemize}
+                \item Design maintenance and implementation of Database, RESTful APIs, website and app.
+                \item Technologies used: MySQL, Node.js, React.js, Flux, React Native, Expo, JavaScript, CSS, Digital Ocean Cloud. 
+            \end{itemize}
+            \divider
+            \cvevent{Lead Software Developer }{| Eventyab Cloud Services Inc.}{Jun 2014 -- Present}{Calgary, Canada}
+            \begin{itemize}
+                \item Development and maintenance of ticket sales, seat map and live reporting systems.
+                \item
+                Technologies used: MySQL, PHP, Symfony, JavaScript, CSS, Bootstrap, Paypal API.
+            \end{itemize}
+            \divider
+            \cvevent{Research Assistant}{| University of Calgary}{May 2011 -- Jan 2021}{Calgary, Canada}
+            \begin{itemize}
+                \item Location Recommendation for Social Networks:
+                \begin{itemize}
+                    \item Recommends locations to the users based on their preferences and accessibility of the locations.
+                    \item Technologies used: Java, MATLAB, Python and MySQL.
+                \end{itemize}
+                \item Collaborations:
+                \begin{itemize}
+                    \item Taxi Route Recommendation. (Java, C++, PostgreSQL)
+                    \item Route and Travel Mode Recommendation. (Java, C\#)
+                    \item Cold-Heavy Oil Production with Sand (CHOPS) Optimization. (Java, Matlab)
+                \end{itemize}
+                \item 10 publications.
+            \end{itemize}
+        % ----- EXPERIENCE -----
+        
+        % ----- EDUCATION -----
+        \cvsection{Education}
+            \cvevent{Doctor of Philosophy | Geomatics Engineering }{\\University of Calgary}{May 2014 -- Jan 2021}{Calgary, Canada}
+            \begin{itemize}
+                 \item Thesis Title: Behavior-based and Contextual Location Recommendation for Location Based Social Networks.
+            \end{itemize}
+            \divider
+            \cvevent{Master of Science | Geomatics Engineering }{\\University of Calgary}{May 2011 -- Jan 2014}{Calgary, Canada}
+            \begin{itemize}
+                \item Thesis Title: Activity-based and Behavior-based Location Recommendation for Location Based Social Networks.
+            \end{itemize}
+            \divider
+            \cvevent{Bachelor of Science | Software Engineering }{\\Sharif University of Technology}{Sep 2005 -- Sep 2010}{Tehran, Iran}
+        \end{paracol}
+        \newpage
+        \columnratio{1}
+        \begin{paracol}{1}
+        \cvsection{Major Publications}
+        \cvevent{Contextual Location Recommendation on Location-Based Social Networks}{\\ \textbf{Seyyed Mohammadreza Rahimi}, Behrouz Far, Xin Wang}{2021}{GeoInformatica (Under Review)}
+        \cvevent{BR2: A Travel Behavioral Approach to Personalized Route Recommendation Based on \\GPS Trajectories}{\\Rodrigo Augusto de Oliveira e Silva, Ge Cui, \textbf{Seyyed Mohammadreza Rahimi}, Xin Wang}{2020}{BMDA 2020}
+        \cvevent{Behavior-based Location Recommendation on Location-based Social Networks}{\\ \textbf{Seyyed Mohammadreza Rahimi}, Behrouz Far, Xin Wang}{2019 - 2017}{GeoInformatica - PAKDD 2017 - South Korea}
+        \cvevent{Optimized Random Walk with Restart for Recommendation Systems}{\\ \textbf{Seyyed Mohammadreza Rahimi}, Rodrigo Augusto de Oliveira e Silva, Behrouz Far, Xin Wang}{2019}{Canadian AI 2019 - Kingston, Canada}
+        \cvevent{Similarity-based Probabilistic Category-based Location Recommendation \\ Utilizing Temporal and Geographical Influence}{\\Dequan Zhou,  \textbf{Seyyed Mohammadreza Rahimi}, Xin Wang}{2016}{International Journal of Data Science and Analytics}
+        \cvevent{Location Recommendation based on Periodicity of Human Activities and Location Categories}{\\ \textbf{Seyyed Mohammadreza Rahimi}, Xin Wang}{2013}{PAKDD 2013 - Gold Coast, Australia}
+        \cvsection{Scholarships and Awards}
+        \cvevent{Alberta Innovates Graduate Student Scholarship}{| University of Calgary}{May 2017}{Calgary, Canada}
+        \cvevent{Eyes High International Doctoral Scholarship}{| University of Calgary}{May 2018}{Calgary, Canada}
+        \cvevent{University Technologies International Inc. Fellowships }{| University of Calgary}{Sep 2014}{Calgary, Canada}
+        
+        \cvsection{Volunteer Experience}
+        \cvevent{President}{| Iranian Graduate Students Association}{May 2014 -- May 2016}{Calgary, Canada}
+        \cvevent{VP-Event}{| Iranian Graduate Students Association}{May 2014 -- May 2016}{Calgary, Canada}
+        % ----- EDUCATION -----
+        
+        % ----- PROJECTS -----
+        %\cvsection{Projects}
+        %    \cvevent{Project 1 }{\cvrepo{| \faGithub}{https://github.com/user/repo}\cvrepo{| \faGlobe}{https://repo-demo.com/}}{Mm YYYY -- Mm YYYY}{}
+        %    \begin{itemize}
+        %        \item Item 1
+        %        \item Item 2
+        %    \end{itemize}
+        %    \divider
+            
+        %    \cvevent{Project 1 }{\cvrepo{| \faGitlab}{https://gitlab.com/user/repo}\cvrepo{| \faGlobe}{https://repo-demo.com/}}{Mm YYYY -- Mm YYYY}{}
+        %    \begin{itemize}
+        %        \item Item 1
+        %        \item Item 2
+        %    \end{itemize}
+        % ----- PROJECTS -----
         
     \end{paracol}
 \end{document}
